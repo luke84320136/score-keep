@@ -27,4 +27,10 @@ Meteor.startup(function(){
     );
     ReactDOM.render(jsx, document.getElementById('app'));
   });
+
+  //Insert new doc into players collection
+  Players.insert({
+    name: 'Parker',
+    score: 1
+  });
 });
